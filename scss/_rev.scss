@@ -1,0 +1,10 @@
+.rev-block {
+  display: none; 
+  @media #{$medium} {
+  	display: block;
+  }
+}
+
+.rev-top{
+	margin-top: 20px;
+}

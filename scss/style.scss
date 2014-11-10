@@ -1,0 +1,24 @@
+/*!
+Theme Name: jindaAds
+Theme URI: http://www.theTechr.com
+Author: JindaTheme
+Author URI: http://www.jindatheme.com
+Description: JindaAds, a simple advertising WordPress Theme from JindaTheme
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: jindaAds, jindatheme, advertisement, minimal, flat
+Text Domain: jindaAds
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import 'bourbon/bourbon';
+@import 'fonts';
+@import 'varieble';
+@import 'global';
+
+@import 'rev';
+@import 'header';
+@import 'footer';

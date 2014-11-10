@@ -1,0 +1,25 @@
+h1,h2,h3,h4,h5,h6,p{
+	cursor: default;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'rsu';
+}
+
+a{
+	color: $main-green;
+	&:hover{
+		color: darken($main-green, 20%);
+		text-decoration: none;
+	}
+}
+
+.hero-unit{
+	width: 95%;
+	margin: auto;
+	position: relative;
+	@media #{$large} {
+		width: 100%;
+		max-width: 940px;
+	}
+}

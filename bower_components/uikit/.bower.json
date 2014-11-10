@@ -1,0 +1,30 @@
+{
+  "name": "uikit",
+  "version": "2.11.1",
+  "homepage": "http://getuikit.com",
+  "main": [
+    "css/uikit.min.css",
+    "js/uikit.min.js"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  },
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "docs",
+    "vendor",
+    "composer.json",
+    "index.html"
+  ],
+  "_release": "2.11.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.11.1",
+    "commit": "a53ed8d6e77bad865435810abbf2dcc9c38a5702"
+  },
+  "_source": "git://github.com/uikit/bower-uikit.git",
+  "_target": "~2.11.1",
+  "_originalSource": "uikit",
+  "_direct": true
+}

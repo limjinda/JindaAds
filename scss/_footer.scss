@@ -1,0 +1,49 @@
+.footer{
+	background-color: $main-black;
+	padding: 25px 20px 20px;
+	color: $main-white;
+	@media #{$medium} {
+		padding: 25px 0 20px;
+	}
+	.footer-site-name{
+		color: $main-white;
+		font-size: 14px;
+		margin: 0 auto 5px;
+		line-height: 1.4em;
+	}
+	.footer-copyright{
+		font-size: 11px;
+		margin: 0;
+		color: $main-gray;
+		a{
+			color: $main-red;
+		}
+	}
+	.footer-social-list{
+		display: block;
+		margin: 10px auto 5px;
+		@media #{$small} {
+			text-align: right;
+			margin: 0 auto 5px;
+		}
+		> li{
+			margin: 0 2px;
+			> a{
+				color: $main-white;
+				font-size: 1.4em;
+				&:hover{
+					color: $main-gray;
+				}
+			}
+		}
+	}
+	.footer-made{
+		display: block;
+		color: $main-gray;
+		margin: 0;
+		font-size: 0.8em;
+		@media #{$small} {
+			text-align: right;
+		}
+	}
+}
