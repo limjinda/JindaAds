@@ -18,7 +18,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import 'fonts';
 @import 'varieble';
 @import 'global';
+@import 'override';
 
 @import 'rev';
+@import 'pagination';
+@import 'sidebar';
+
 @import 'header';
+@import 'main';
 @import 'footer';
+
+@import 'list';

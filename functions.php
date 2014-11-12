@@ -1,0 +1,56 @@
+<?php 
+
+if ( ! function_exists( 'jinda_setup' ) ) :
+function jinda_setup() {
+	
+	load_theme_textdomain( 'jinda', get_template_directory() . '/languages' );
+
+	add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 768, 384, false );
+	add_image_size( 'jindaCover', 768, 384, array( 'center', 'center' ) );
+
+	register_nav_menus( array(
+		'primary'   => __( 'Primary top menu', 'jinda' ),
+		'secondary' => __( 'Mobile menu', 'jinda' ),
+	));
+
+	add_theme_support( 'html5', array(
+		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
+	));
+
+	add_theme_support( 'post-formats', array(
+		'video', 'gallery',
+	));	
+
+	// require_once (dirname(__FILE__) . '/jinda-config.php');
+	
+	$sidebar1_args = array(
+	  'name'          => __( 'Main Sidebar', 'jinda' ),
+	  'id'            => 'main-sidebar',
+	  'before_widget' => '<div class="widget-item uk-width-1-1">',
+	  'after_widget'  => '</div>',
+	  'before_title'  => '<h4 class="widget-header"><i class="uk-icon-arrow-circle-o-right"></i> ',
+	  'after_title'   => '</h4>'
+	  );
+	register_sidebar( $sidebar1_args );
+
+}
+endif;
+add_action( 'after_setup_theme', 'jinda_setup' );
+
+function jinda_scripts() {
+	wp_deregister_script('jquery');
+	wp_register_script('jquery', get_stylesheet_directory_uri() . '/bower_components/jquery/dist/jquery.min.js');
+	wp_enqueue_script('jquery');
+	
+	wp_enqueue_style('uikit-css', get_stylesheet_directory_uri() . '/bower_components/uikit/css/uikit.almost-flat.min.css');
+	wp_enqueue_style('jinda-css', get_stylesheet_uri() );
+
+	wp_enqueue_script('modernizr', get_stylesheet_directory_uri() . '/bower_components/modernizr/modernizr.js');
+	wp_enqueue_script('uikit-js', get_stylesheet_directory_uri() . '/bower_components/uikit/js/uikit.min.js', array(), '1.0.0', true);
+	wp_enqueue_script('jinda-js', get_stylesheet_directory_uri() . '/js/global.js', array(), '1.0.0', true);
+}
+add_action( 'wp_enqueue_scripts', 'jinda_scripts' );
+
+?>

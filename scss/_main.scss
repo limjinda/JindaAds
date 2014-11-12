@@ -1,0 +1,12 @@
+.main{
+	padding: 20px 0;
+	.slider-view{
+		margin-bottom: 10px;
+	}
+	.sidebar-block{
+		display: none;
+		@media #{$large}{
+			display: block;
+		}
+	}
+}

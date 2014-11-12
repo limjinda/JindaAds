@@ -7,11 +7,26 @@ h1,h2,h3,h4,h5,h6{
 }
 
 a{
-	color: $main-green;
+	color: $main-red;
 	&:hover{
-		color: darken($main-green, 20%);
+		color: darken($main-red, 20%);
 		text-decoration: none;
 	}
+}
+
+body{
+	// background: $main-white	url('img/site-bg2.jpg') no-repeat;
+	// background-size: cover;
+	// background-color: $main-white;
+}
+
+#wrapper{
+	// @media #{$large} {
+	// 	max-width: 1024px;
+	// 	margin: auto;
+	// 	background-color: white;
+	// 	box-shadow: 0 1px 12px -2px rgba(0,0,0,0.125);
+	// }
 }
 
 .hero-unit{
@@ -21,5 +36,24 @@ a{
 	@media #{$large} {
 		width: 100%;
 		max-width: 940px;
+	}
+}
+
+.go-top-button{
+	color: $main-white;
+	position: fixed;
+	right: 25px;
+	bottom: 70px;
+	display: none;
+	background-color: $main-green;
+	padding: 10px 15px;
+	font-size: 1.2em;
+	border-bottom: 2px solid darken($main-green, 10%);
+	border-radius: 4px;
+	z-index: 10;
+	&:hover{
+		color: $main-white;
+		background-color: $main-red;
+		border-bottom: 2px solid darken($main-red, 5%);
 	}
 }

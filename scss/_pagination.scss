@@ -1,0 +1,11 @@
+.pagination-block{
+	margin: 15px auto 0;
+	a{
+		font-family: 'rsu';
+		font-weight: bold;
+		font-size: 12px;
+		@media #{$medium} {
+			font-size: 14px;
+		}
+	}
+}

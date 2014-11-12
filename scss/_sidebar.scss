@@ -1,0 +1,31 @@
+.sidebar-inner{
+	padding: 20px 10px;
+	background-color: $main-white;
+	border: 1px solid $main-gray;
+	.widget-item{
+		margin-top: 20px;
+		&:first-child{
+			margin-top: 0;
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0 0 0 20px;
+			@include box-sizing(border-box);
+			> li{
+				margin: 1px auto;
+				@include ellipsis(90%);
+				> a{
+					font-weight: bold;
+					font-size: 13px;
+				}
+			}
+		}
+	}
+	.widget-header{
+		font-size: 16px;
+		line-height: 1.6em;
+		font-weight: bold;
+		margin: 0 auto 10px;
+	}
+}
