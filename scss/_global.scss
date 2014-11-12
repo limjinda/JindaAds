@@ -4,6 +4,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 h1,h2,h3,h4,h5,h6{
 	font-family: 'rsu';
+	font-weight: bold;
 }
 
 a{
@@ -15,17 +16,16 @@ a{
 }
 
 body{
-	// background: $main-white	url('img/site-bg2.jpg') no-repeat;
-	// background-size: cover;
+	// background: $main-white	url('img/photography.png') repeat;
 	// background-color: $main-white;
 }
 
 #wrapper{
 	// @media #{$large} {
-	// 	max-width: 1024px;
-	// 	margin: auto;
-	// 	background-color: white;
-	// 	box-shadow: 0 1px 12px -2px rgba(0,0,0,0.125);
+		// max-width: 1024px;
+		// margin: auto;
+		// background-color: white;
+		// box-shadow: 0 1px 12px -2px rgba(0,0,0,0.125);
 	// }
 }
 

@@ -33,3 +33,25 @@
 		}
 	}
 }
+
+.uk-thumbnail{
+	background-color: $main-white;
+	padding: 2px;
+	border-radius: 0;
+}
+
+.facebook-comment{
+	margin: 15px auto;
+}
+
+.facebook-comment-title{
+	margin: 30px auto 15px;
+	font-size: 22px;
+}
+
+.fb_iframe_widget,
+.fb_iframe_widget span,
+.fb_iframe_widget span iframe[style] {
+  min-width: 100% !important;
+  width: 100% !important;
+}

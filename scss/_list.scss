@@ -55,3 +55,20 @@
 		}
 	}
 }
+
+.list-title{
+	text-align: center;
+	font-size: 22px;
+	margin: 0 auto 20px;
+	padding: 30px 15px 25px;
+	background-color: $main-red;
+	color: $main-white;
+	font-weight: bold;
+	text-transform: uppercase;
+	.search-query{
+		display: block;
+		font-size: 26px;
+		line-height: 1.7em;
+		margin-bottom: 10px;
+	}
+}
