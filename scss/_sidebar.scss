@@ -1,7 +1,7 @@
 .sidebar-inner{
 	padding: 20px 10px;
 	background-color: $main-white;
-	border: 1px solid $main-gray;
+	border: 1px solid darken($main-white, 2%);
 	.widget-item{
 		margin-top: 20px;
 		&:first-child{
@@ -10,13 +10,13 @@
 		ul{
 			list-style: none;
 			margin: 0;
-			padding: 0 0 0 20px;
+			padding: 0 0 0 0px;
 			@include box-sizing(border-box);
 			> li{
-				margin: 1px auto;
+				margin: 5px auto;
 				@include ellipsis(90%);
+				display: block;
 				> a{
-					font-weight: bold;
 					font-size: 13px;
 				}
 			}
