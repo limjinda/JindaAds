@@ -12,7 +12,7 @@
 						<!-- related posts -->
 						<?php get_template_part( 'view', 'related' ); ?>
 						<!-- post pagination -->
-						<?php get_template_part('view', 'post-pagination') ?>
+						<?php get_template_part('view', 'post-pagination'); ?>
 						<!-- comment -->
 						<?php if ( comments_open() || get_comments_number() ) {
 								comments_template();
@@ -26,12 +26,12 @@
 							     data-width="100%"
 							     data-colorscheme="light"></div>
 						</div>
-					<? endwhile; ?>
+					<?php endwhile; ?>
 				</div>				
 
 				<!-- sidebar -->
 				<div class="sidebar-block uk-width-medium-1-1 uk-width-large-3-10">
-					<?php get_template_part('view', 'sidebar') ?>
+					<?php get_template_part('view', 'sidebar'); ?>
 				</div>
 
 			</div>		

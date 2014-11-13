@@ -19,7 +19,7 @@ $related_posts = new WP_Query($related_args); ?>
 						<a href="<?php the_permalink() ?>" class="uk-thumbnail" title="<?php the_title() ?>"><?php the_post_thumbnail('jindaCover', array('alt' => get_the_title())) ?></a>
 					<?php else: ?>
 						<a href="<?php the_permalink() ?>" class="uk-thumbnail" title="<?php the_title() ?>"><img src="http://www.placehold.it/768x384" alt="<?php the_title() ?>"></a>
-					<?php endif ?>
+					<?php endif; ?>
 					<h5 class="related-post-title"><a href="<?php the_permalink() ?>" title="<?php the_title() ?>"><?php the_title() ?></a></h5>
 					<p class="related-post-summary"><?= iconv_substr(get_the_excerpt(),0,100,"UTF-8").'..'; ?></p>
 				</div>
