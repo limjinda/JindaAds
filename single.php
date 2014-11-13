@@ -9,6 +9,8 @@
 					<!-- postBlock -->
 					<?php while ( have_posts() ) : the_post(); ?>
 						<?php get_template_part( 'view', 'single' ); ?>
+						<!-- related posts -->
+						<?php get_template_part( 'view', 'related' ); ?>
 						<!-- post pagination -->
 						<?php get_template_part('view', 'post-pagination') ?>
 						<!-- comment -->

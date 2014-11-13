@@ -72,3 +72,24 @@
 		margin-bottom: 10px;
 	}
 }
+
+.related-block{
+	padding-bottom: 30px;
+	.related-title{
+		margin: 40px auto 10px;
+		font-size: 20px;
+	}
+
+	.related-inner{
+		margin-top: 15px !important;
+	}
+
+	.related-post-title{
+		margin: 15px auto 5px;
+	}
+
+	.related-post-summary{
+		font-size: 0.9em;
+		color: $main-black;
+	}
+}

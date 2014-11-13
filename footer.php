@@ -24,14 +24,7 @@
 			<div class="uk-offcanvas-bar">
 				<div class="uk-panel">
 					<h3 class="uk-panel-title"><i class="uk-icon-hand-o-right"></i> เมนูนำทาง</h3>
-					<ul class="uk-nav uk-nav-offcanvas">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">ข่าวไอที</a></li>
-						<li><a href="#">แอพมือถือ</a></li>
-						<li><a href="#">มือถือออกใหม่</a></li>
-						<li><a href="#">อุปกรณ์คอมพิวเตอร์</a></li>
-						<li><a href="#">notebook</a></li>
-					</ul>
+					<?php wp_nav_menu( array('theme_location' => 'secondary', 'container' => false, 'menu_class' => 'uk-nav uk-nav-offcanvas') ); ?>
 				</div>
 			</div>
 		</div>
@@ -40,7 +33,5 @@
 
 	<!-- script -->
 	<?php wp_footer(); ?>
-	<!-- livereload -->
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
