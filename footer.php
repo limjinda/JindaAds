@@ -8,10 +8,10 @@
 					</div>
 					<div class="uk-width-small-4-10">
 						<ul class="footer-social-list uk-subnav">
-							<li><a href="https://www.facebook.com/pages/Techr"><i class="uk-icon-facebook-square"></i></a></li>
-							<li><a href="#"><i class="uk-icon-twitter-square"></i></a></li>
-							<li><a href="https://plus.google.com/105874781308314969682" rel="publisher"><i class="uk-icon-google-plus-square"></i></a></li>
-							<li><a href="#"><i class="uk-icon-youtube-square"></i></a></li>
+							<li><a href="https://www.facebook.com/pages/Techr" target="_blank"><i class="uk-icon-facebook-square"></i></a></li>
+							<li><a href="https://twitter.com/TechrThailand"  target="_blank"><i class="uk-icon-twitter-square"></i></a></li>
+							<li><a href="https://plus.google.com/105874781308314969682" rel="publisher"  target="_blank"><i class="uk-icon-google-plus-square"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UCijPSEL2EQa-KZBOtSwE0MQ"  target="_blank"><i class="uk-icon-youtube-square"></i></a></li>
 						</ul>
 						<p class="footer-made uk-text-small">จัดทำขึ้นที่ กรุงเทพฯ</p>
 					</div>

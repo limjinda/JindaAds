@@ -27,6 +27,6 @@ $related_posts = new WP_Query($related_args); ?>
 		</div>
 	</div>
 <?php }else{ ?>
-	<!-- no related yet -->
+	<div>&nbsp;</div>
 <?php } ?>
 <?php wp_reset_query(); ?>
