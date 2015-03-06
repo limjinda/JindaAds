@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- initSliderCSS -->
-<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/nivo-slider.css" />
-<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/light/light.css" />
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/nivo-slider.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/light/light.css" type="text/css" media="all" />
 
 <!-- main -->
 <main class="main">
