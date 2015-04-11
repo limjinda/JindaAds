@@ -24,8 +24,6 @@
 		.essb-fans.metro.threecols li{float: left;}
 		.essb_links.essb_template_metro-retina .essb_totalcount{background: #f5f5f5; text-align: center;}
 	</style>
-	<!-- mailchimp -->
-	<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"9974be10ddeabb38e52503be0","lid":"4bffcc82ec"}) })</script>
 </head>
 <body <?php body_class() ?>>
 <!-- EX.SCRIPT -->
