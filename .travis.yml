@@ -3,10 +3,6 @@ php:
   - 5.4
   - 5.5
   - 5.6
-env:
-  - DB=mysql
-
-script: build.sh
 
 notifications:
   email:
