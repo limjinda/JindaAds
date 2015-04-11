@@ -6,7 +6,7 @@ php:
 env:
   - DB=mysql
 
-# script: phpunit
+script: build.sh
 
 notifications:
   email:
