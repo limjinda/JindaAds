@@ -1,17 +1,17 @@
 {
   "name": "jindaAds",
-  "version": "0.0.1",
+  "version": "1.0",
   "authors": [
     "Jirayu Limjinda <jir4yu.l@gmail.com>"
   ],
-  "description": "JindaAds is simple Repsonsive WordPress Blog",
+  "description": "Advertise Blogging Responsive WordPress Theme",
   "main": "index.php",
   "keywords": [
     "jindatheme",
     "jindaAds"
   ],
   "license": "MIT",
-  "homepage": "http://www.theTechr.com",
+  "homepage": "http://www.jindatheme.com",
   "private": true,
   "ignore": [
     "**/.*",
