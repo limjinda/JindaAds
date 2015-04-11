@@ -6,8 +6,4 @@ php:
 env:
   - DB=mysql
 
-script: ./build.sh
-
-notifications:
-  email:
-    - hello@jindatheme.com
+script: 
