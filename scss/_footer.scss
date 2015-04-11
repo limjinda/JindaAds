@@ -16,7 +16,7 @@
 		margin: 0;
 		color: $main-gray;
 		a{
-			color: $main-red;
+			color: #bc703c;
 		}
 	}
 	.footer-social-list{
@@ -39,9 +39,12 @@
 	}
 	.footer-made{
 		display: block;
-		color: $main-gray;
+		color: $grey;
 		margin: 0;
 		font-size: 0.8em;
+		> a{
+			color: #bc703c;
+		}
 		@media #{$small} {
 			text-align: right;
 		}

@@ -1,5 +1,10 @@
 <?php 
 
+add_filter( 'ot_theme_mode', '__return_true' );
+require( trailingslashit( get_template_directory() ) . 'option-tree/ot-loader.php' );
+require( trailingslashit( get_template_directory() ) . 'theme-options.php' );
+add_filter( 'ot_show_pages', '__return_false' );
+
 if ( ! function_exists( 'jinda_setup' ) ) :
 function jinda_setup() {
 	
@@ -22,8 +27,6 @@ function jinda_setup() {
 	add_theme_support( 'post-formats', array(
 		'video', 'gallery',
 	));	
-
-	// require_once (dirname(__FILE__) . '/jinda-config.php');
 	
 	$sidebar1_args = array(
 	  'name'          => __( 'Main Sidebar', 'jinda' ),
@@ -52,5 +55,4 @@ function jinda_scripts() {
 	wp_enqueue_script('jinda-js', get_stylesheet_directory_uri() . '/js/global.js', array(), '1.0.0', true);
 }
 add_action( 'wp_enqueue_scripts', 'jinda_scripts' );
-
 ?>

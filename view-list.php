@@ -7,7 +7,7 @@
 			<?php if ($i == 3): ?>
 				<div class="uk-width-1-1 uk-hidden-small">
 					<div class="rev-block rev-listview">
-						<img src="http://www.placehold.it/468x60" />
+						<?php echo ot_get_option('banner_loop'); ?>						
 					</div>
 				</div>		
 			<?php endif ?>

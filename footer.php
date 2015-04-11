@@ -3,17 +3,17 @@
 			<div class="hero-unit">
 				<div class="uk-grid">
 					<div class="uk-width-small-6-10">
-						<h1 class="footer-site-name"><?php bloginfo('name') ?></h1>
-						<p class="footer-copyright">บทความในเว็บไซต์มีลิขสิทธิ์ <a href="http://creativecommons.org/licenses/by-nd/4.0/" target="_blank" title="Attribution-NoDerivatives 4.0 International">CC BY-ND 4.0</a></p>
+						<h1 class="footer-site-name"><?php bloginfo('name') ?></h1>						
+						<p class="footer-copyright"><?php echo ot_get_option('footer_copyright') ?></p>
 					</div>
 					<div class="uk-width-small-4-10">
 						<ul class="footer-social-list uk-subnav">
-							<li><a href="https://www.facebook.com/pages/Techr" target="_blank"><i class="uk-icon-facebook-square"></i></a></li>
-							<li><a href="https://twitter.com/TechrThailand"  target="_blank"><i class="uk-icon-twitter-square"></i></a></li>
-							<li><a href="https://plus.google.com/105874781308314969682" rel="publisher"  target="_blank"><i class="uk-icon-google-plus-square"></i></a></li>
-							<li><a href="https://www.youtube.com/channel/UCijPSEL2EQa-KZBOtSwE0MQ"  target="_blank"><i class="uk-icon-youtube-square"></i></a></li>
+							<li><a href="<?php echo ot_get_option('facebook_link') ?>" target="_blank"><i class="uk-icon-facebook-square"></i></a></li>
+							<li><a href="<?php echo ot_get_option('twitter_link') ?>"  target="_blank"><i class="uk-icon-twitter-square"></i></a></li>
+							<li><a href="<?php echo ot_get_option('google_plus_link') ?>" rel="publisher"  target="_blank"><i class="uk-icon-google-plus-square"></i></a></li>
+							<li><a href="<?php echo ot_get_option('youtube_link') ?>"  target="_blank"><i class="uk-icon-youtube-square"></i></a></li>
 						</ul>
-						<p class="footer-made uk-text-small">จัดทำขึ้นที่ กรุงเทพฯ</p>
+						<?php echo ot_get_option('footer_credit') ?>
 					</div>
 				</div>
 			</div>
