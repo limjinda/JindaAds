@@ -23,7 +23,7 @@ JindaAds เป็น free theme ภายใต้การจัดทำข�
 
 ## Recommended Plugins
 * Quick Adsense
-* Easy Social Share Buttons [Paid]
+* Easy Social Share Buttons [[Paid]](http://codecanyon.net/item/easy-social-share-buttons-for-wordpress/6394476?ref=JindaTheme)
 * WordPress SEO
 
 #Credits
