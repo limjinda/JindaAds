@@ -34,7 +34,7 @@
 				<div class="uk-grid">
 					<!-- logo -->
 					<div class="uk-width-medium-3-10 uk-width-large-4-10">
-						<a href="<?php echo home_url(); ?>" title="<?php bloginfo('name')?>"><img src="<?php echo get_stylesheet_directory_uri() ?>/img/site-logo.png" class="site-logo" alt="theTechr.com" /></a>
+						<a href="<?php echo home_url(); ?>" title="<?php bloginfo('name')?>"><img src="<?php echo ot_get_option('website_logo') ?>" class="site-logo" alt="theTechr.com" /></a>
 					</div>
 					<!-- banner -->
 					<div class="uk-width-medium-7-10 uk-width-large-6-10 uk-text-right">

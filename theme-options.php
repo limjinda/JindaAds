@@ -29,22 +29,37 @@ function custom_theme_options() {
     'sections'        => array( 
       array(
         'id'          => 'general',
-        'title'       => __( 'General', 'jindaads' )
+        'title'       => __( 'General', 'jinda' )
       ),
       array(
         'id'          => 'advertisements',
-        'title'       => __( 'Advertisements', 'jindaads' )
+        'title'       => __( 'Advertisements', 'jinda' )
       ),
       array(
         'id'          => 'footer',
-        'title'       => __( 'Footer', 'jindaads' )
+        'title'       => __( 'Footer', 'jinda' )
       )
     ),
     'settings'        => array( 
       array(
+        'id'          => 'website_logo',
+        'label'       => __( 'Website logo', 'jinda' ),
+        'desc'        => __( 'recommended size: 200x80px', 'jinda' ),
+        'std'         => '',
+        'type'        => 'upload',
+        'section'     => 'general',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
         'id'          => 'description',
-        'label'       => __( 'Description', 'jindaads' ),
-        'desc'        => __( 'this field for website meta description tag.', 'jindaads' ),
+        'label'       => __( 'Description', 'jinda' ),
+        'desc'        => __( 'this field for website meta description tag.', 'jinda' ),
         'std'         => '',
         'type'        => 'text',
         'section'     => 'general',
@@ -58,8 +73,8 @@ function custom_theme_options() {
       ),
       array(
         'id'          => 'keywords',
-        'label'       => __( 'Keywords', 'jindaads' ),
-        'desc'        => __( 'this field for website meta keywords tag.', 'jindaads' ),
+        'label'       => __( 'Keywords', 'jinda' ),
+        'desc'        => __( 'this field for website meta keywords tag.', 'jinda' ),
         'std'         => '',
         'type'        => 'text',
         'section'     => 'general',
@@ -73,9 +88,9 @@ function custom_theme_options() {
       ),
       array(
         'id'          => 'custom_html',
-        'label'       => __( 'Custom HTML', 'jindaads' ),
+        'label'       => __( 'Custom HTML', 'jinda' ),
         'desc'        => __( 'place your custom HTML tag here<br />
-like a popup window from external service.', 'jindaads' ),
+like a popup window from external service.', 'jinda' ),
         'std'         => '',
         'type'        => 'textarea-simple',
         'section'     => 'general',
@@ -89,9 +104,9 @@ like a popup window from external service.', 'jindaads' ),
       ),
       array(
         'id'          => 'custom_css',
-        'label'       => __( 'Custom CSS', 'jindaads' ),
+        'label'       => __( 'Custom CSS', 'jinda' ),
         'desc'        => __( 'place your custom CSS here.<br /><br />
-** place without <u>style</u> tag **', 'jindaads' ),
+** place without <u>style</u> tag **', 'jinda' ),
         'std'         => '',
         'type'        => 'css',
         'section'     => 'general',
@@ -105,11 +120,11 @@ like a popup window from external service.', 'jindaads' ),
       ),
       array(
         'id'          => 'custom_scripts',
-        'label'       => __( 'Custom Javascripts', 'jindaads' ),
+        'label'       => __( 'Custom Javascripts', 'jinda' ),
         'desc'        => __( 'Place your external javascript here<br />
 like Google Analytics, Facebook Javascript or sth..<br /><br />
 
-** place without <u>script</u> tag **', 'jindaads' ),
+** place without <u>script</u> tag **', 'jinda' ),
         'std'         => '',
         'type'        => 'javascript',
         'section'     => 'general',
@@ -123,11 +138,11 @@ like Google Analytics, Facebook Javascript or sth..<br /><br />
       ),
       array(
         'id'          => 'banner_top',
-        'label'       => __( 'Banner Top', 'jindaads' ),
+        'label'       => __( 'Banner Top', 'jinda' ),
         'desc'        => __( 'Place your banner script here <br />
 <strong>Recommended size: 468x60px</strong><br /><br />
 
-<small>ไม่ต้องสนใจว่ามันจะฟ้อง error อะไร<br /> ถ้าวางแล้วโฆษณาขึ้นก็โอเค</small>', 'jindaads' ),
+<small>ไม่ต้องสนใจว่ามันจะฟ้อง error อะไร<br /> ถ้าวางแล้วโฆษณาขึ้นก็โอเค</small>', 'jinda' ),
         'std'         => '',
         'type'        => 'javascript',
         'section'     => 'advertisements',
@@ -141,14 +156,14 @@ like Google Analytics, Facebook Javascript or sth..<br /><br />
       ),
       array(
         'id'          => 'banner_loop',
-        'label'       => __( 'Banner Loop', 'jindaads' ),
+        'label'       => __( 'Banner Loop', 'jinda' ),
         'desc'        => __( 'เมื่อครบ 3 posts จะแสดง advertise banner 1 ครั้ง<br />
 <strong>recommended size: 468x60px</strong><br /><br />
 
 <small>
 ไม่ต้องสนใจว่ามัน error อะไร<br />
 ถ้า banner ขึ้นถือว่าโอเค
-</small>', 'jindaads' ),
+</small>', 'jinda' ),
         'std'         => '',
         'type'        => 'javascript',
         'section'     => 'advertisements',
@@ -162,8 +177,8 @@ like Google Analytics, Facebook Javascript or sth..<br /><br />
       ),
       array(
         'id'          => 'footer_copyright',
-        'label'       => __( 'Footer Copyright', 'jindaads' ),
-        'desc'        => __( 'Your copyright goes here.', 'jindaads' ),
+        'label'       => __( 'Footer Copyright', 'jinda' ),
+        'desc'        => __( 'Your copyright goes here.', 'jinda' ),
         'std'         => '',
         'type'        => 'textarea-simple',
         'section'     => 'footer',
@@ -177,7 +192,7 @@ like Google Analytics, Facebook Javascript or sth..<br /><br />
       ),
       array(
         'id'          => 'facebook_link',
-        'label'       => __( 'Facebook Link', 'jindaads' ),
+        'label'       => __( 'Facebook Link', 'jinda' ),
         'desc'        => '',
         'std'         => 'https://www.facebook.com/pages/Techr',
         'type'        => 'text',
@@ -192,7 +207,7 @@ like Google Analytics, Facebook Javascript or sth..<br /><br />
       ),
       array(
         'id'          => 'twitter_link',
-        'label'       => __( 'Twitter Link', 'jindaads' ),
+        'label'       => __( 'Twitter Link', 'jinda' ),
         'desc'        => '',
         'std'         => 'https://twitter.com/TechrThailand',
         'type'        => 'text',
@@ -207,7 +222,7 @@ like Google Analytics, Facebook Javascript or sth..<br /><br />
       ),
       array(
         'id'          => 'google_plus_link',
-        'label'       => __( 'Google Plus Link', 'jindaads' ),
+        'label'       => __( 'Google Plus Link', 'jinda' ),
         'desc'        => '',
         'std'         => 'https://plus.google.com/105874781308314969682',
         'type'        => 'text',
@@ -222,7 +237,7 @@ like Google Analytics, Facebook Javascript or sth..<br /><br />
       ),
       array(
         'id'          => 'youtube_link',
-        'label'       => __( 'Youtube Link', 'jindaads' ),
+        'label'       => __( 'Youtube Link', 'jinda' ),
         'desc'        => '',
         'std'         => 'https://www.youtube.com/channel/UCijPSEL2EQa-KZBOtSwE0MQ',
         'type'        => 'text',
@@ -237,8 +252,8 @@ like Google Analytics, Facebook Javascript or sth..<br /><br />
       ),
       array(
         'id'          => 'footer_credit',
-        'label'       => __( 'Footer Credit', 'jindaads' ),
-        'desc'        => __( 'Credit ของผู้พัฒนา', 'jindaads' ),
+        'label'       => __( 'Footer Credit', 'jinda' ),
+        'desc'        => __( 'Credit ของผู้พัฒนา', 'jinda' ),
         'std'         => '',
         'type'        => 'textarea',
         'section'     => 'footer',
