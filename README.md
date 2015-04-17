@@ -1,7 +1,7 @@
 # JindaAds
 Advertise Blogging Responsive WordPress Theme
 
-[<img src="//button.flattr.com/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0">](https://flattr.com/submit/auto?user_id=jir4yu&url=https%3A%2F%2Fgithub.com%2Fjir4yu%2FJindaAds)
+[<img src="//button.flattr.com/flattr-badge-large.png">](https://flattr.com/submit/auto?user_id=jir4yu&url=https%3A%2F%2Fgithub.com%2Fjir4yu%2FJindaAds)
 
 #### DEMO: http://www.thetechr.com
 
