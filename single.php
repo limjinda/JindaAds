@@ -1,4 +1,10 @@
 <?php get_header() ?>
+
+	<!-- mobile ads -->
+	<div class="rev-block rev-single">
+		<?php echo ot_get_option('banner_single') ?>
+	</div>
+
 	<!-- main -->
 	<main class="main">
 		<div class="hero-unit">
@@ -21,7 +27,7 @@
 						<div class="facebook-comment">
 							<h4 class="facebook-comment-title">แสดงความคิดเห็น</h4>
 							<div class="fb-comments"
-							     data-href="http://www.thetechr.com"
+							     data-href="<?php the_permalink(); ?>"
 							     data-numposts="3"
 							     data-width="100%"
 							     data-colorscheme="light"></div>

@@ -155,6 +155,24 @@ like Google Analytics, Facebook Javascript or sth..<br /><br />
         'operator'    => 'and'
       ),
       array(
+        'id'          => 'banner_single',
+        'label'       => __( 'Banner Single', 'jinda' ),
+        'desc'        => __( 'Place your banner script here <br />
+<strong>Recommended size: 300x250</strong><br /><br />
+
+<small>ไม่ต้องสนใจว่ามันจะฟ้อง error อะไร<br /> ถ้าวางแล้วโฆษณาขึ้นก็โอเค</small>', 'jinda' ),
+        'std'         => '',
+        'type'        => 'javascript',
+        'section'     => 'advertisements',
+        'rows'        => '',
+        'post_type'   => '',
+        'taxonomy'    => '',
+        'min_max_step'=> '',
+        'class'       => '',
+        'condition'   => '',
+        'operator'    => 'and'
+      ),
+      array(
         'id'          => 'banner_loop',
         'label'       => __( 'Banner Loop', 'jinda' ),
         'desc'        => __( 'เมื่อครบ 3 posts จะแสดง advertise banner 1 ครั้ง<br />
