@@ -15,4 +15,10 @@ $(document).ready(function() {
 			nav.removeClass('fixed-top'); // remove class
 		};
 	})
+
+	if ( $('.entry-content p').find('iframe').length > 0 ) {
+		var container =  $('.entry-content p').find('iframe').parent('p');
+		container.addClass('videoWrapper');
+	};
+
 });
