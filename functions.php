@@ -56,15 +56,4 @@ function jinda_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'jinda_scripts' );
 
-// add filter to wp_title
-function jinda_wp_title($title, $sep){
-	if( !is_single() ){
-		return $title;
-	}else{
-		$title .= get_bloginfo( 'name' );
-	}
-	return $title;
-}
-add_filter( 'wp_title', 'jinda_wp_title', 10, 2 );
-
 ?>
