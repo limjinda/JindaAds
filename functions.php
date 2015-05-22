@@ -59,7 +59,7 @@ add_action( 'wp_enqueue_scripts', 'jinda_scripts' );
 // add filter to wp_title
 function jinda_wp_title($title, $sep){
 	if( !is_single() ){
-		return bloginfo('name');
+		return $title;
 	}else{
 		$title .= get_bloginfo( 'name' );
 	}
