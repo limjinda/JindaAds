@@ -55,4 +55,16 @@ function jinda_scripts() {
 	wp_enqueue_script('jinda-js', get_stylesheet_directory_uri() . '/js/global.js', array(), '1.3.3', true);
 }
 add_action( 'wp_enqueue_scripts', 'jinda_scripts' );
+
+// add filter to wp_title
+function jinda_wp_title($title, $sep){
+	if( !is_single() ){
+		return bloginfo('name');
+	}else{
+		$title .= get_bloginfo( 'name' );
+	}
+	return $title;
+}
+add_filter( 'wp_title', 'jinda_wp_title', 10, 2 );
+
 ?>
