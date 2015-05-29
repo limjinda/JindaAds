@@ -56,4 +56,14 @@ function jinda_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'jinda_scripts' );
 
+function custom_excerpt_length( $length ) {
+	return 200;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+function new_excerpt_more( $more ) {
+	return ' <a title="อ่านต่อ" href="' . get_permalink( get_the_ID() ) . '">' . __( 'อ่านต่อ', 'jindaAds' ) . '</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 ?>
