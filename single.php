@@ -17,8 +17,6 @@
 						<?php get_template_part( 'view', 'single' ); ?>
 						<!-- related posts -->
 						<?php get_template_part( 'view', 'related' ); ?>
-						<!-- post pagination -->
-						<?php get_template_part('view', 'post-pagination'); ?>
 						<!-- comment -->
 						<?php if ( comments_open() || get_comments_number() ) {
 								comments_template();
