@@ -17,18 +17,14 @@
 						<?php get_template_part( 'view', 'single' ); ?>
 						<!-- related posts -->
 						<?php get_template_part( 'view', 'related' ); ?>
-						<!-- comment -->
-						<?php if ( comments_open() || get_comments_number() ) {
-								comments_template();
-						}?>
 						<!-- fb comment -->
 						<div class="facebook-comment">
 							<h4 class="facebook-comment-title">แสดงความคิดเห็น</h4>
-							<div class="fb-comments"
-							     data-href="<?php the_permalink(); ?>"
-							     data-numposts="3"
-							     data-width="100%"
-							     data-colorscheme="light"></div>
+							<div 
+								class="fb-comments" 
+								data-href="<?php the_permalink(); ?>"
+								data-width="100%"
+								data-numposts="3"></div>
 						</div>
 					<?php endwhile; ?>
 				</div>				
