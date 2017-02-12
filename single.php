@@ -1,10 +1,5 @@
 <?php get_header() ?>
 
-	<!-- mobile ads -->
-	<div class="rev-block rev-single">
-		<?php echo ot_get_option('banner_single') ?>
-	</div>
-
 	<!-- main -->
 	<main class="main">
 		<div class="hero-unit">
