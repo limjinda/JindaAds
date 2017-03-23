@@ -8,6 +8,8 @@
 			<div class="entry-content">
 				<?php the_content(); ?>
 				<div class="uk-clearfix"></div>
+				<?php if(function_exists('the_views')) { the_views(); } ?>
+				<div class="uk-clearfix"></div>
 			</div>
 
 			<?php if( current_user_can('edit_posts') ): ?>
